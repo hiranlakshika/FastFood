@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Fast Food</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/footer.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="css/login.css" rel="stylesheet">
+        <link href="css/products.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a href="" class="navbar-brand">Fast Food</a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+
+                    <a href="" class="btn btn-warning navbar-btn navbar-right" data-toggle="modal" data-target="#login-modal">Log in</a>
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a> 
+                        <li><a href="gallery.html">Gallery</a> 
+                        <li><a href="menus.html">Menus</a> 
+                        <li><a href="contact.html">Contact Us</a> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <br>
+        <br>
+
+        <div class="container">
+            <div class="row">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h3>
+                            Our latest food menus</h3>
+                    </div>
+                    <div class="col-md-3">
+                        <!-- Controls -->
+                        <div class="controls pull-right hidden-xs">
+                            <a class="left fa fa-chevron-left btn btn-success" href="#carousel-example"
+                               data-slide="prev"></a><a class="right fa fa-chevron-right btn btn-success" href="#carousel-example"
+                               data-slide="next"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="carousel-example" class="carousel slide hidden-xs" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="price col-md-6">
+                                                    <h5>
+                                                        Sample Product</h5>
+                                                    <h5 class="price-text-color">
+                                                        $199.99</h5>
+                                                </div>
+                                                <div class="rating hidden-sm col-md-6">
+                                                    <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                    </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                    </i><i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                                <p class="btn-details">
+                                                    <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="price col-md-6">
+                                                    <h5>
+                                                        Product Example</h5>
+                                                    <h5 class="price-text-color">
+                                                        $249.99</h5>
+                                                </div>
+                                                <div class="rating hidden-sm col-md-6">
+                                                </div>
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                                <p class="btn-details">
+                                                    <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="price col-md-6">
+                                                    <h5>
+                                                        Next Sample Product</h5>
+                                                    <h5 class="price-text-color">
+                                                        $149.99</h5>
+                                                </div>
+                                                <div class="rating hidden-sm col-md-6">
+                                                    <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                    </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                    </i><i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                                <p class="btn-details">
+                                                    <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="price col-md-6">
+                                                    <h5>
+                                                        Sample Product</h5>
+                                                    <h5 class="price-text-color">
+                                                        $199.99</h5>
+                                                </div>
+                                                <div class="rating hidden-sm col-md-6">
+                                                    <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                    </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                    </i><i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                                <p class="btn-details">
+                                                    <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="price col-md-6">
+                                                    <h5>
+                                                        Product with Variants</h5>
+                                                    <h5 class="price-text-color">
+                                                        $199.99</h5>
+                                                </div>
+                                                <div class="rating hidden-sm col-md-6">
+                                                    <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                    </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                    </i><i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                                <p class="btn-details">
+                                                    <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="price col-md-6">
+                                                    <h5>
+                                                        Grouped Product</h5>
+                                                    <h5 class="price-text-color">
+                                                        $249.99</h5>
+                                                </div>
+                                                <div class="rating hidden-sm col-md-6">
+                                                </div>
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                                <p class="btn-details">
+                                                    <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="price col-md-6">
+                                                    <h5>
+                                                        Product with Variants</h5>
+                                                    <h5 class="price-text-color">
+                                                        $149.99</h5>
+                                                </div>
+                                                <div class="rating hidden-sm col-md-6">
+                                                    <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                    </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                    </i><i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                                <p class="btn-details">
+                                                    <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="price col-md-6">
+                                                    <h5>
+                                                        Product with Variants</h5>
+                                                    <h5 class="price-text-color">
+                                                        $199.99</h5>
+                                                </div>
+                                                <div class="rating hidden-sm col-md-6">
+                                                    <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                    </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                    </i><i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                                <p class="btn-details">
+                                                    <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h3>
+                            Most popular food menus</h3>
+                    </div>
+                    <div class="col-md-3">
+                        <!-- Controls -->
+                        <div class="controls pull-right hidden-xs">
+                            <a class="left fa fa-chevron-left btn btn-primary" href="#carousel-example-generic"
+                               data-slide="prev"></a><a class="right fa fa-chevron-right btn btn-primary" href="#carousel-example-generic"
+                               data-slide="next"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="carousel-example-generic" class="carousel slide hidden-xs" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="price col-md-6">
+                                                    <h5>
+                                                        Sample Product</h5>
+                                                    <h5 class="price-text-color">
+                                                        $199.99</h5>
+                                                </div>
+                                                <div class="rating hidden-sm col-md-6">
+                                                    <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                    </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                    </i><i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                                <p class="btn-details">
+                                                    <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="price col-md-6">
+                                                    <h5>
+                                                        Product Example</h5>
+                                                    <h5 class="price-text-color">
+                                                        $249.99</h5>
+                                                </div>
+                                                <div class="rating hidden-sm col-md-6">
+                                                </div>
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                                <p class="btn-details">
+                                                    <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="price col-md-6">
+                                                    <h5>
+                                                        Next Sample Product</h5>
+                                                    <h5 class="price-text-color">
+                                                        $149.99</h5>
+                                                </div>
+                                                <div class="rating hidden-sm col-md-6">
+                                                    <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                    </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                    </i><i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                                <p class="btn-details">
+                                                    <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="price col-md-6">
+                                                    <h5>
+                                                        Product with Variants</h5>
+                                                    <h5 class="price-text-color">
+                                                        $199.99</h5>
+                                                </div>
+                                                <div class="rating hidden-sm col-md-6">
+                                                    <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                    </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                    </i><i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                                <p class="btn-details">
+                                                    <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="price col-md-6">
+                                                    <h5>
+                                                        Grouped Product</h5>
+                                                    <h5 class="price-text-color">
+                                                        $249.99</h5>
+                                                </div>
+                                                <div class="rating hidden-sm col-md-6">
+                                                </div>
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                                <p class="btn-details">
+                                                    <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="price col-md-6">
+                                                    <h5>
+                                                        Product with Variants</h5>
+                                                    <h5 class="price-text-color">
+                                                        $149.99</h5>
+                                                </div>
+                                                <div class="rating hidden-sm col-md-6">
+                                                    <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                    </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                    </i><i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                                <p class="btn-details">
+                                                    <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--        Login popup-->
+
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog">
+                <div class="loginmodal-container">
+                    <h1>Login to Your Account</h1><br>
+                    <form action="login.php" method="post">
+                        <input type="text" name="user" placeholder="Username">
+                        <input type="password" name="pass" placeholder="Password">
+                        <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                    </form>
+
+                    <div class="login-help">
+                        <a href="signup.html">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--        Login popup end-->
+         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <footer>
+            <div class="footer" id="footer">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+                            <h3>  </h3>
+                            <ul>
+                                <li>
+                                    <div class="input-append newsletter-box text-center">
+                                        <input type="text" class="full text-center" placeholder="Email ">
+                                        <button class="btn  bg-gray" type="button"> Subscribe <i class="fa fa-long-arrow-right"> </i> </button>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="social">
+                                <li> <a href="https://www.facebook.com/" target="blank"> <i class=" fa fa-facebook">   </i> </a> </li>
+                                <li> <a href="https://twitter.com/" target="blank"> <i class="fa fa-twitter">   </i> </a> </li>
+                                <li> <a href="https://plus.google.com/" target="blank"> <i class="fa fa-google-plus">   </i> </a> </li>
+                                <li> <a href="https://www.pinterest.com/" target="blank"> <i class="fa fa-pinterest">   </i> </a> </li>
+                                <li> <a href="https://www.youtube.com/" target="blank"> <i class="fa fa-youtube">   </i> </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--/.row--> 
+                </div>
+                <!--/.container--> 
+            </div>
+            <!--/.footer-->
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <p class="pull-left"> Copyright © Fast Food  2016. All right reserved. </p>
+                    <div class="pull-right">
+                        <ul class="nav nav-pills payments">
+                            <li><i class="fa fa-cc-visa"></i></li>
+                            <li><i class="fa fa-cc-mastercard"></i></li>
+                            <li><i class="fa fa-cc-amex"></i></li>
+                            <li><i class="fa fa-cc-paypal"></i></li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+            <!--/.footer-bottom--> 
+        </footer>
+        
+        <script src="jquery/jquery-3.1.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
