@@ -10,10 +10,11 @@ $message = $_POST["message"];
 $sql = "insert into contactus (name,email,web,message) values ('$name','$email','$website','$message')";
 
 if ($conn->query($sql) === TRUE) {
-    echo "<script type='text/javascript'>alert('Submitted successfully!')</script>";
     header('Location: http://localhost/FastFood/contact.html');
+    echo "<script type='text/javascript'>alert('Submitted successfully!')</script>";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
+    
 }
 
 $conn->close();
