@@ -1,11 +1,108 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>User Sign Up</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+    <title>Fast Food</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a href="" class="navbar-brand">Fast Food</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a>
+                    <li><a href="#gallery">Gallery</a>
+                    <li><a href="#menus">Menus</a>
+                    <li><a href="contact.html">Contact Us</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </br></br></br>
+
+    <!--    Sign up form-->
+    <div class="container">
+        <div class="row">
+            <div class="panel panel-primary">
+                <div class="panel-body">
+                    <form method="post" action="signup.php" role="form">
+                        <div class="form-group">
+                            <h2>Create account</h2>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="signupName">Your name</label>
+                            <input name="signupName" type="text" maxlength="50" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="signupPhone">Phone number</label>
+                            <input name="signupPhone" type="number" maxlength="10" class="form-control" required> 
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="signupEmail">Email</label>
+                            <input name="signupEmail" type="email" maxlength="50" class="form-control" required> 
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="signupPassword">Password</label>
+                            <input name="signupPassword" id="signupPassword" type="password" maxlength="25" class="form-control" placeholder="at least 6 characters" length="40" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="signupPasswordagain">Password again</label>
+                            <input id="signupPasswordagain" type="password" maxlength="25" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <button id="signupSubmit" type="submit" class="btn btn-info btn-block" onclick="passwordCheck()">Create your account</button>
+                        </div>
+                        <p class="form-group">By creating an account, you agree to our <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a>.</p>
+                        <hr>
+                        <p></p>Already have an account? <a href="#" data-toggle="modal" data-target="#login-modal">Log in</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    Sign up form end-->
+
+    <!--        Login popup-->
+
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="loginmodal-container">
+                <h1>Login to Your Account</h1><br>
+                <form action="login.php" method="post">
+                    <input type="text" name="user" placeholder="Username">
+                    <input type="password" name="pass" placeholder="Password">
+                    <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--        Login popup end-->
+    <script>
+        function passwordCheck() {
+            var passOne = document.getElementById("signupPassword").value;
+            var passTwo = document.getElementById("signupPasswordagain").value;
+            
+            if(passOne!==passTwo){
+                alert("Passwords don't match");
+                document.getElementById("signupPassword").value='';
+                document.getElementById("signupPasswordagain").value='';
+            }
+        }
+    </script>
+    <script src="jquery/jquery-3.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
 </html>
