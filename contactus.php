@@ -7,15 +7,19 @@ $email = $_POST["email"];
 $website = $_POST["web"];
 $message = $_POST["message"];
 
-$sql = "insert into contactus (name,email,web,message) values ('$name','$email','$website','$message')";
+if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    $sql = "insert into contactus (name,email,web,message) values ('$name','$email','$website','$message')";
 
-if ($conn->query($sql) === TRUE) {
-    header('Location: http://localhost/FastFood/contact.html');
-    echo "<script type='text/javascript'>alert('Submitted successfully!')</script>";
+    if ($conn->query($sql) === TRUE) {
+        echo "<script type='text/javascript'>alert('Submitted successfully!'); "
+        . "window.location.href='http://localhost/FastFood/contact.html';</script>";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+
+    $conn->close();
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-    
+    echo "<script type='text/javascript'>alert('Email is invalid'); "
+    . "window.location.href='http://localhost/FastFood/contact.html';</script>";
 }
-
-$conn->close();
 ?>
