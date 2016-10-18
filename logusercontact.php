@@ -11,14 +11,12 @@ echo '<!DOCTYPE html>
         <title>Fast Food</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/login.css" rel="stylesheet">
         <link href="css/footer.css" rel="stylesheet">
         <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-        <link href="css/login.css" rel="stylesheet">
     </head>
     <body>
-
         <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
             <div class="container">
                 <div class="navbar-header">
@@ -33,9 +31,9 @@ echo '<!DOCTYPE html>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-collapse">
 
-                    <a href="http://localhost/FastFood/logout.php" class="btn btn-warning navbar-btn navbar-right" data-toggle="modal">Log out</a>
+                    <a href="http://localhost/FastFood/logout.php" class="btn btn-warning navbar-btn navbar-right" data-toggle="modal" >Log out</a>
                     <ul class="nav navbar-nav">
-                        <li><a href="http://localhost/FastFood/loguser.php">Home</a> 
+                       <li><a href="http://localhost/FastFood/loguser.php">Home</a> 
                         <li><a href="http://localhost/FastFood/logusergallery.php">Gallery</a> 
                         <li><a href="http://localhost/FastFood/logusermenu.php">Menus</a> 
                         <li><a href="http://localhost/FastFood/logusercontact.php">Contact Us</a> 
@@ -44,47 +42,71 @@ echo '<!DOCTYPE html>
             </div>
         </nav>
 
-        <div class="jumbotron">
-            <div class="container text-center">
-                <h1>Fast Food</h1>
-                <p>Sri Lanka'."'".'s best and fast food delivering system</p>
-
-                <div class="btn-group">
-                    <a href="https://play.google.com/store/apps/details?id=com.ce.android.brand.uppercrust" target="_blank" class="btn btn-lg btn-info">Download App</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Feedback-->
         <div class="container">
             <section>
-                <div class="page-header" id="feedback">
-                    <h2>Latest news.<small> Check out the Food Trends for 2016</small></h2>
+                <div class="page-header" id="contact" >
+                    <h2 style="margin-top: 2cm">Contact Us.<small> Contact us for more.</small></h2>
                 </div>
 
                 <div class="row">
-                    <div class="col-md-4">
-                        <blockquote>
-                            <p>Sriracha has been the go-to hot sauce of choice these last few years, being used in everything from pasta to cheese dip to ice cream, but it'."'".'s about to be joined by some new, spicy friends. According to Technomic, diners with adventurous palates can look forward to ingredients found in cuisine from North Africa and Southeast Asia such as dukka, ghost pepper, gochujang, harissa sambal and sumac.</p>
-                            <footer>The hotter the better.</footer>
-                        </blockquote>
+                    <div class="col-lg-4">
+                        <p>Send us a message, or contact us from the address below</p>
+
+
+                        <address>
+                            <strong>Fast Food Restaurant</strong></br>
+                            111, High level road </br>
+                            Gangodavila</br>
+                            Nugegoda</br>
+                            Sri Lanka</br>
+                            +94112248963
+                        </address>
                     </div>
-                    <div class="col-md-4">
-                        <blockquote>
-                            <p>For 2016, carbonated beverages are at your local watering hole, Technomic predicts that you'."'".'ll find a preponderance of champagne and Proseccos, soft drinks with a kick and sparkling teas -- not to be confused with bubble teas, which are accompanied by tapioca.</p>
-                            <footer>Pass the bubbly, please.</footer>
-                        </blockquote>
+
+                    <div class="col-lg-8">
+                        <form action="contactus.php" class="form-horizontal" method="post">
+                            <div class="form-group">
+                                <label for="user-name" class="col-lg-2 control-label">Name</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="user-name" placeholder="Enter you name" name="name" required>
+                                </div>
+                            </div><!-- End form group -->
+
+                            <div class="form-group">
+                                <label for="user-email" class="col-lg-2 control-label">Email</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="user-email" placeholder="Enter you Email Address" name="email" required>
+                                </div>
+                            </div><!-- End form group -->
+
+                            <div class="form-group">
+                                <label for="user-url" class="col-lg-2 control-label">Your Website</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="user-email" placeholder="If you have Any." name="web">
+                                </div>
+                            </div><!-- End form group -->
+
+                            <div class="form-group">
+                                <label for="user-message" class="col-lg-2 control-label">Your Message</label>
+                                <div class="col-lg-10">
+                                    <textarea id="user-message" class="form-control" 
+                                              cols="20" rows="10" placeholder="Enter your Message" name="message" required></textarea>
+                                </div>
+                            </div><!-- End form group -->
+
+                            <div class="form-group">
+                                <div class="col-lg-10 col-lg-offset-2">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+
+
+
+                        </form>
                     </div>
-                    <div class="col-md-4">
-                        <blockquote>
-                            <p>In 2016, more diners will want to know where their food comes from and how it got onto their plates, according to Technomic. This clamoring for local and fresh ingredients means many restaurants will aim to streamline their supply chains and be as transparent as possible about their suppliers and food sources.</p>
-                            <footer>Not the destination, but the journey.</footer>
-                        </blockquote>
-                    </div>
-                </div>
+                </div><!-- End the row -->
             </section>
         </div>
-
 
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <footer>
@@ -132,9 +154,13 @@ echo '<!DOCTYPE html>
             </div>
             <!--/.footer-bottom--> 
         </footer>
+
+
         <script src="jquery/jquery-3.1.0.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
 ';
+
 ?>
+

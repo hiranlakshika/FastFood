@@ -11,14 +11,12 @@ echo '<!DOCTYPE html>
         <title>Fast Food</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/login.css" rel="stylesheet">
         <link href="css/footer.css" rel="stylesheet">
         <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-        <link href="css/login.css" rel="stylesheet">
     </head>
     <body>
-
         <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
             <div class="container">
                 <div class="navbar-header">
@@ -35,7 +33,7 @@ echo '<!DOCTYPE html>
 
                     <a href="http://localhost/FastFood/logout.php" class="btn btn-warning navbar-btn navbar-right" data-toggle="modal">Log out</a>
                     <ul class="nav navbar-nav">
-                        <li><a href="http://localhost/FastFood/loguser.php">Home</a> 
+                       <li><a href="http://localhost/FastFood/loguser.php">Home</a> 
                         <li><a href="http://localhost/FastFood/logusergallery.php">Gallery</a> 
                         <li><a href="http://localhost/FastFood/logusermenu.php">Menus</a> 
                         <li><a href="http://localhost/FastFood/logusercontact.php">Contact Us</a> 
@@ -43,48 +41,63 @@ echo '<!DOCTYPE html>
                 </div>
             </div>
         </nav>
+        <br>
+        <br>
 
-        <div class="jumbotron">
-            <div class="container text-center">
-                <h1>Fast Food</h1>
-                <p>Sri Lanka'."'".'s best and fast food delivering system</p>
-
-                <div class="btn-group">
-                    <a href="https://play.google.com/store/apps/details?id=com.ce.android.brand.uppercrust" target="_blank" class="btn btn-lg btn-info">Download App</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Feedback-->
         <div class="container">
             <section>
-                <div class="page-header" id="feedback">
-                    <h2>Latest news.<small> Check out the Food Trends for 2016</small></h2>
+                <div class="page-header" id="gallery">
+                    <h2>Gallery.<small> Check out our latest food events</small></h2>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-4">
-                        <blockquote>
-                            <p>Sriracha has been the go-to hot sauce of choice these last few years, being used in everything from pasta to cheese dip to ice cream, but it'."'".'s about to be joined by some new, spicy friends. According to Technomic, diners with adventurous palates can look forward to ingredients found in cuisine from North Africa and Southeast Asia such as dukka, ghost pepper, gochujang, harissa sambal and sumac.</p>
-                            <footer>The hotter the better.</footer>
-                        </blockquote>
-                    </div>
-                    <div class="col-md-4">
-                        <blockquote>
-                            <p>For 2016, carbonated beverages are at your local watering hole, Technomic predicts that you'."'".'ll find a preponderance of champagne and Proseccos, soft drinks with a kick and sparkling teas -- not to be confused with bubble teas, which are accompanied by tapioca.</p>
-                            <footer>Pass the bubbly, please.</footer>
-                        </blockquote>
-                    </div>
-                    <div class="col-md-4">
-                        <blockquote>
-                            <p>In 2016, more diners will want to know where their food comes from and how it got onto their plates, according to Technomic. This clamoring for local and fresh ingredients means many restaurants will aim to streamline their supply chains and be as transparent as possible about their suppliers and food sources.</p>
-                            <footer>Not the destination, but the journey.</footer>
-                        </blockquote>
-                    </div>
-                </div>
+                <div class="carousel slide" id="screenshot-carousel" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#screenshot-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#screenshot-carousel" data-slide-to="1"></li>
+                        <li data-target="#screenshot-carousel" data-slide-to="2"></li>
+                        <li data-target="#screenshot-carousel" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="pics/donuts.jpg" alt="Text of the image">
+                            <div class="carousel-caption">
+                                <h3>Donuts</h3>
+                                <p>Food festival 2016</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="pics/cup_cakes.jpg" alt="Text of the image">
+                            <div class="carousel-caption">
+                                <h3>Cup cakes</h3>
+                                <p>Food festival 2016</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="pics/strawberry.jpg" alt="Text of the image">
+                            <div class="carousel-caption">
+                                <h3>Strawberry with chocolate</h3>
+                                <p>Food festival 2016</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="pics/coffee.jpg" alt="Text of the image">
+                            <div class="carousel-caption">
+                                <h3>Coffee</h3>
+                                <p>Food festival 2016</p>
+                            </div>
+                        </div>
+
+                    </div><!-- End Carousel inner -->
+                    <a href="#screenshot-carousel" class="left carousel-control" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a href="#screenshot-carousel" class="right carousel-control" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div><!-- End Carousel -->
+
             </section>
         </div>
-
 
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <footer>
@@ -132,6 +145,8 @@ echo '<!DOCTYPE html>
             </div>
             <!--/.footer-bottom--> 
         </footer>
+
+
         <script src="jquery/jquery-3.1.0.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
     </body>
