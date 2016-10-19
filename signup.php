@@ -14,8 +14,10 @@ if ($conn->query($sql) === TRUE) {
     $sql = "INSERT INTO login (username, password)VALUES ('$signupName','$signupPassword')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "<script type='text/javascript'>alert('Sign up successful!'); "
-        . "window.location.href='http://localhost/FastFood/index.html';</script>";
+        session_start();
+        $_SESSION["uname"] = $signupName;
+            echo "<script type='text/javascript'>alert('Sign up Successfull!'); "
+            . "window.location.href='http://localhost/FastFood/loguser.php';</script>";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
