@@ -15,6 +15,7 @@ echo '<!DOCTYPE html>
         <link href="css/login.css" rel="stylesheet">
         <link href="css/footer.css" rel="stylesheet">
         <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
     <body>
         <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
@@ -37,6 +38,7 @@ echo '<!DOCTYPE html>
                         <li><a href="http://localhost/FastFood/logusergallery.php">Gallery</a> 
                         <li><a href="http://localhost/FastFood/logusermenu.php">Menus</a> 
                         <li><a href="http://localhost/FastFood/logusercontact.php">Contact Us</a> 
+                        <li><a href="http://localhost/FastFood/cart.php">Shopping Cart</a> 
                     </ul>
                 </div>
             </div>
@@ -108,7 +110,6 @@ echo '<!DOCTYPE html>
             </section>
         </div>
 
-        <link href="css/font-awesome.min.css" rel="stylesheet">
         <footer>
             <div class="footer" id="footer">
                 <div class="container">
